@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index for Marine Parser Ex</title>
+</head>
+<body>
+    <h4>Enter full url to load all file from browser</h4>
+    <h5>ex) http://dm1489986934346.fun25.co.kr/mbesallfiles/abcd.all</h5>
+    <input type="text" id="inputURLBabylon05" style="width: 50vw" onkeyup="onKeyupBabylon05(event)">
+    <button onclick="onClickBabylon05()">Load all file</button>
+
+    <script type="text/javascript">
+        function onKeyupBabylon05(e) {
+            if('Enter' === e.key) {
+                onClickBabylon05();
+            }
+        }
+
+        function onClickBabylon05() {
+            const url = document.getElementById('inputURLBabylon05').value;
+            location.href = `./mbes/babylon05_ground.html?url=${url}`;
+        }
+    </script>
+</body>
+</html>
