@@ -104,5 +104,3 @@ dist
 .tern-port
 
 #dependency as sub directory
-marineparser
-three.js
